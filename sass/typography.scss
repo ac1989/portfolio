@@ -3,28 +3,54 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
   color: $off-black;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.441rem;
+  line-height: 3.052rem;
+}
 h2 {
   font-size: 1.953rem;
   line-height: 2.441rem;
 }
-
 h3 {
   font-size: 1.5em;
   line-height: 2.5rem;
 }
-
 li,
 p {
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 @media (min-width: 1440px) {
+  // 1.5 Scale
+  h1 {
+    font-size: 3.375rem;
+    line-height: 5.0625rem;
+  }
   h2 {
     font-size: 2.25rem;
     line-height: 3.375rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  li,
+  p {
+    line-height: 1.5rem;
   }
 }

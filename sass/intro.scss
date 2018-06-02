@@ -2,6 +2,10 @@
   position: relative;
   width: 100%;
   display: flex;
+  hr {
+    margin: 1rem 0;
+    color: purple;
+  }
 }
 
 #intro-left,
@@ -40,11 +44,34 @@
   animation: downShift 10s infinite linear;
 }
 
+#down-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  svg {
+    animation: fidgetUpDown 1s infinite alternate ease-in-out;
+  }
+}
+
 @keyframes downShift {
   0% {
     transform: rotateZ(0deg);
   }
   100% {
     transform: rotateZ(180deg);
+  }
+}
+
+@keyframes fidgetUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
   }
 }

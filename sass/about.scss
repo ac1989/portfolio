@@ -1,3 +1,7 @@
+#about-view {
+  margin-top: 2rem;
+}
+
 #about {
   position: relative;
   display: flex;
@@ -13,7 +17,8 @@
 #about-right {
   position: relative;
   padding: 32px;
-  width: 50%;
+  width: 40%;
+  margin-right: 10%;
   & h3 {
     margin-bottom: 1rem;
   }

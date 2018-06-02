@@ -14,6 +14,12 @@ body {
   background: $off-white;
 }
 
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
 #container {
   position: relative;
 }

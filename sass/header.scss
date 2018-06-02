@@ -12,9 +12,19 @@ nav {
   display: flex;
   margin-right: 8px;
   align-self: flex-end;
+  z-index: 100;
   li {
     margin-left: 8px;
     list-style: none;
     border-bottom: 4px solid purple;
+    transition: all 0.2s ease-out;
+    a {
+      color: $off-black;
+      text-decoration: none;
+    }
+    &:hover {
+      cursor: pointer;
+      border-bottom: 4px solid $off-white;
+    }
   }
 }

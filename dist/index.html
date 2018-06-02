@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alex Carter | Web Developer</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <script src="/js.9071d938.js"></script>
 <link rel="stylesheet" href="/js.9071d938.css"></head>
 
@@ -16,21 +18,28 @@
         <!-- NAV -->
         <header id="header">
             <nav>
-                <li>Github</li>
-                <li>Project</li>
-                <li>Email</li>
+                <li>
+                    <a href="https://github.com/ac1989/repositories">Github</a>
+                </li>
+                <li>
+                    <a href="#projects-view">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Email</a>
+                </li>
             </nav>
         </header>
         <!-- END NAV -->
 
         <!-- INTRO VIEW -->
-        <div class="view">
+        <div class="view" id="intro-view">
             <div id="intro">
                 <div id="intro-left">
-                    <h2>Hello</h2>
-                    <h3>My name is Alex</h3>
+                    <h1>Hello</h1>
+                    <h2>My name is Alex</h2>
                     <h3>I am a React / Javascript Developer</h3>
-                    <p>You cant check out some of my projects
+                    <hr>
+                    <p>You can check out some of my projects
                         <a href="#">here.</a>
                     </p>
                     <p>Or you can peek my code
@@ -40,23 +49,40 @@
                         <a href="#">email</a> me.</p>
                 </div>
                 <div id="intro-right">
-                    <div id="down-clicker">
+                    <a href="#projects-view" id="down-clicker">
+                        <div id="down-arrow">
+                            <svg width="82" height="52">
+                                <polygon points="0,0 82,0 41,52" fill="rgba(255,255,255,0.4)"></polygon>
+                            </svg>
+                        </div>
                         <div class="down-clicker-mover"></div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <!-- END INTRO VIEW -->
 
         <!-- PROJECTS VIEW -->
-        <div class="view">
+        <div id="projects-view">
+            <h2>Projects</h2>
             <div id="projects">
                 <div class="project-wrapper project-small" id="project-calary-man">
                     <div class="project-buttons">
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
+                        <a href="https://github.com/ac1989/calary-man" class="tech-button button-github">
+                            <img src="/ic_github.ee290fa7.png" alt="Github">
+                        </a>
+                        <a href="https://reactjs.org/" class="tech-button button-react">
+                            <img src="/icon-64h-react.94b59100.png" alt="React JS">
+                        </a>
+                        <a href="https://redux.js.org/" class="tech-button button-redux">
+                            <img src="/icon-64h-redux.eedd89dd.png" alt="Redux">
+                        </a>
+                        <a href="https://redux-saga.js.org/" class="tech-button button-redux-saga">
+                            <img src="/icon-64h-redux-saga.d3f4a3fc.png" alt="Redux Saga">
+                        </a>
+                        <a href="https://material-ui.com/" class="tech-button button-mui">
+                            <img src="/icon-64h-mui.34075104.png" alt="Material UI">
+                        </a>
                     </div>
                     <div class="project-content-wrapper">
                         <div class="project-text">
@@ -71,11 +97,21 @@
                 </div>
                 <div class="project-wrapper project-medium" id="project-go">
                     <div class="project-buttons">
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
+                        <a href="https://github.com/ac1989/go-spy" class="tech-button button-github">
+                            <img src="/ic_github.ee290fa7.png" alt="Github">
+                        </a>
+                        <a href="https://reactjs.org/" class="tech-button button-react">
+                            <img src="/icon-64h-react.94b59100.png" alt="React JS">
+                        </a>
+                        <a href="https://redux.js.org/" class="tech-button button-redux">
+                            <img src="/icon-64h-redux.eedd89dd.png" alt="Redux">
+                        </a>
+                        <a href="https://redux-saga.js.org/" class="tech-button button-redux-saga">
+                            <img src="/icon-64h-redux-saga.d3f4a3fc.png" alt="Redux Saga">
+                        </a>
+                        <a href="https://emotion.sh/" class="tech-button button-emotion">
+                            <img src="/icon-64h-emotion.1b82d8ea.png" alt="Emotion JS">
+                        </a>
                     </div>
                     <div class="project-content-wrapper">
                         <div class="project-text">
@@ -90,10 +126,18 @@
                 </div>
                 <div class="project-wrapper project-medium" id="project-tascii">
                     <div class="project-buttons">
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
+                        <a href="https://github.com/ac1989/tascii" class="tech-button button-github">
+                            <img src="/ic_github.ee290fa7.png" alt="Github">
+                        </a>
+                        <a href="https://reactjs.org/" class="tech-button button-react">
+                            <img src="/icon-64h-react.94b59100.png" alt="React JS">
+                        </a>
+                        <a href="https://redux.js.org/" class="tech-button button-redux">
+                            <img src="/icon-64h-redux.eedd89dd.png" alt="Redux">
+                        </a>
+                        <a href="https://koajs.com/" class="tech-button button-koa">
+                            <span>koa</span>
+                        </a>
                     </div>
                     <div class="project-content-wrapper">
                         <div class="project-text">
@@ -108,10 +152,18 @@
                 </div>
                 <div class="project-wrapper project-small" id="project-portfolio">
                     <div class="project-buttons">
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
-                        <div class="tech-button"></div>
+                        <a href="https://github.com/ac1989/portfolio" class="tech-button button-github">
+                            <img src="/ic_github.ee290fa7.png" alt="Github">
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="tech-button button-html">
+                            <span alt="HTML" aria-label="HTML">HTML</span>
+                        </a>
+                        <a href="https://sass-lang.com/" class="tech-button button-sass">
+                            <img src="/icon-64h-sass.0eb4c5d6.png" alt="Sass">
+                        </a>
+                        <a href="https://reactjs.org/" class="tech-button button-javascript">
+                            <span alt="Javascript" aria-label="javascript">JS</span>
+                        </a>
                     </div>
                     <div class="project-content-wrapper">
                         <div class="project-text">
@@ -129,7 +181,7 @@
         <!-- END PROJECTS VIEW -->
 
         <!-- SPEW VIEW -->
-        <div class="view">
+        <div id="about-view">
             <div id="about">
                 <div id="about-blurb">
                     <div id="about-blurb-text">
@@ -168,7 +220,7 @@
         <!-- END SPEW VIEW -->
 
         <!-- FOOTER -->
-        <div class="view">
+        <div>
             <div id="footer">
                 <div id="footer-text">
                     <div id="footer-titles">
@@ -178,7 +230,7 @@
                         <span>Github &middot; Twitter &middot; LinkedIn &middot; Email</span>
                     </div>
                 </div>
-                <div id="footer-return"></div>
+                <a href="#intro-view" id="footer-return"></a>
                 <div id="footer-copyright">© Alex Carter 2018</div>
             </div>
         </div>
