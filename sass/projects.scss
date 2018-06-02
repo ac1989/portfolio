@@ -1,10 +1,13 @@
 #projects-view {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  & hr {
+    margin-top: 2rem;
+  }
 }
 
 #projects {
   color: $off-white;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 #project-calary-man {
@@ -35,26 +38,19 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 600px) {
   #projects {
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .project-wrapper {
-    margin-bottom: 2%;
-  }
-  .project-wrapper.project-small {
-    position: relative;
-    width: 44%;
-    padding-top: 28%;
-  }
+  .project-wrapper.project-small,
   .project-wrapper.project-medium {
     position: relative;
-    width: 54%;
-    padding-top: 28%;
+    width: 100%;
+    padding-top: 400px;
   }
   .project-content-wrapper {
     position: absolute;
@@ -80,5 +76,44 @@
   }
   .project-description {
     text-decoration: underline;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #projects {
+    flex-direction: row;
+  }
+  .project-wrapper {
+    margin-bottom: 1%;
+  }
+  .project-wrapper.project-small {
+    position: relative;
+    width: 43%;
+    padding-top: 34%;
+  }
+  .project-wrapper.project-medium {
+    position: relative;
+    width: 56%;
+    padding-top: 34%;
+  }
+  .project-description {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-wrapper {
+    margin-bottom: 2%;
+  }
+  .project-wrapper.project-small {
+    position: relative;
+    width: 44%;
+    padding-top: 28%;
+  }
+  .project-wrapper.project-medium {
+    position: relative;
+    width: 54%;
+    padding-top: 28%;
   }
 }

@@ -209,7 +209,7 @@ window.onload = function () {
     projectHeight = projects[0].getBoundingClientRect().height;
   };
 };
-},{"../sass/index.scss":3}],69:[function(require,module,exports) {
+},{"../sass/index.scss":3}],83:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -379,5 +379,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[69,2], null)
+},{}]},{},[83,2], null)
 //# sourceMappingURL=/js.9071d938.map

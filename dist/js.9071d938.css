@@ -10,6 +10,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #1a1a1a; }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: black;
+  opacity: 0.3; }
+
 h1,
 h2,
 h3,
@@ -34,6 +40,9 @@ li,
 p {
   font-size: 1rem;
   line-height: 1.25rem; }
+
+li {
+  line-height: 1.5rem; }
 
 @media (min-width: 1440px) {
   h1 {
@@ -78,10 +87,11 @@ nav {
 #intro {
   position: relative;
   width: 100%;
-  display: flex; }
+  display: flex;
+  padding: 0 1rem; }
   #intro hr {
     margin: 1rem 0;
-    color: purple; }
+    background: purple; }
 
 #intro-left,
 #intro-right {
@@ -95,14 +105,17 @@ nav {
   justify-content: space-around; }
 
 #intro-right {
-  align-items: flex-end; }
+  align-items: flex-end;
+  justify-content: center; }
 
 #down-clicker {
   position: relative;
+  border-radius: 10%;
   width: 70%;
   padding-top: 70%;
   background: purple;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); }
 
 .down-clicker-mover {
   position: absolute;
@@ -138,12 +151,18 @@ nav {
   100% {
     transform: translateY(10px); } }
 
+@media (min-width: 960px) {
+  #intro {
+    padding: 0; } }
+
 #projects-view {
-  padding-top: 2rem; }
+  padding-top: 1.5rem; }
+  #projects-view hr {
+    margin-top: 2rem; }
 
 #projects {
   color: #e1e2e1;
-  margin-top: 1.25rem; }
+  margin-top: 1rem; }
 
 #project-calary-man {
   background: #b71c1c; }
@@ -165,23 +184,18 @@ nav {
   #project-portfolio .tech-button {
     border-bottom: 8px solid #0097a7; }
 
-@media (min-width: 960px) {
+@media (min-width: 600px) {
   #projects {
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between; }
-  .project-wrapper {
-    margin-bottom: 2%; }
-  .project-wrapper.project-small {
-    position: relative;
-    width: 44%;
-    padding-top: 28%; }
+  .project-wrapper.project-small,
   .project-wrapper.project-medium {
     position: relative;
-    width: 54%;
-    padding-top: 28%; }
+    width: 100%;
+    padding-top: 400px; }
   .project-content-wrapper {
     position: absolute;
     top: 0;
@@ -202,7 +216,36 @@ nav {
     justify-content: center;
     align-items: center; }
   .project-description {
-    text-decoration: underline; } }
+    text-decoration: underline;
+    padding-bottom: 1rem; } }
+
+@media (min-width: 960px) {
+  #projects {
+    flex-direction: row; }
+  .project-wrapper {
+    margin-bottom: 1%; }
+  .project-wrapper.project-small {
+    position: relative;
+    width: 43%;
+    padding-top: 34%; }
+  .project-wrapper.project-medium {
+    position: relative;
+    width: 56%;
+    padding-top: 34%; }
+  .project-description {
+    padding: 0; } }
+
+@media (min-width: 1280px) {
+  .project-wrapper {
+    margin-bottom: 2%; }
+  .project-wrapper.project-small {
+    position: relative;
+    width: 44%;
+    padding-top: 28%; }
+  .project-wrapper.project-medium {
+    position: relative;
+    width: 54%;
+    padding-top: 28%; } }
 
 .project-buttons {
   position: absolute;
@@ -248,31 +291,69 @@ nav {
   color: #1a1a1a;
   background: #f8b41c; }
 
+@media (min-width: 960px) {
+  .tech-button {
+    height: 64px;
+    margin-right: 8px;
+    padding: 0 8px; }
+    .tech-button img {
+      height: 36px; }
+    .tech-button span {
+      min-width: 36px;
+      text-align: center; }
+  .button-github {
+    margin-left: 8px;
+    margin-right: auto; } }
+
+@media (min-width: 1280px) {
+  .tech-button {
+    height: 72px;
+    margin-right: 8px;
+    padding: 0 8px; }
+    .tech-button img {
+      height: 48px; }
+    .tech-button span {
+      min-width: 48px;
+      text-align: center; }
+  .button-github {
+    margin-left: 8px;
+    margin-right: auto; } }
+
 #about-view {
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 #about {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 6rem; }
+  #about ul {
+    margin-top: 1rem; }
   #about li {
+    list-style: square;
     margin-left: 32px; }
 
 #about-left,
 #about-right {
   position: relative;
   padding: 32px;
-  width: 40%;
-  margin-right: 10%; }
+  padding-bottom: 6rem;
+  width: 50%; }
   #about-left h3,
   #about-right h3 {
     margin-bottom: 1rem; }
+  #about-left hr,
+  #about-right hr {
+    width: 50%;
+    margin-left: auto; }
 
 #about-right {
   background: #0097a7;
   color: #e1e2e1; }
+  #about-right hr {
+    background: #e1e2e1; }
 
 #about-blurb {
   width: 100%;
@@ -280,8 +361,7 @@ nav {
   margin-bottom: 4rem; }
 
 #about-blurb-text {
-  padding: 16px;
-  padding-bottom: 8px;
+  padding: 3em 2em;
   background: #e1e2e1; }
 
 #footer {
@@ -345,5 +425,5 @@ a:focus {
 @media (min-width: 960px) {
   #container {
     margin: auto;
-    width: 86%;
-    max-width: 1440px; } }
+    width: 82%;
+    max-width: 1280px; } }

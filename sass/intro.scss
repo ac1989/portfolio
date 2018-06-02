@@ -2,9 +2,10 @@
   position: relative;
   width: 100%;
   display: flex;
-  hr {
+  padding: 0 1rem;
+  & hr {
     margin: 1rem 0;
-    color: purple;
+    background: purple;
   }
 }
 
@@ -23,14 +24,17 @@
 
 #intro-right {
   align-items: flex-end;
+  justify-content: center;
 }
 
 #down-clicker {
   position: relative;
+  border-radius: 10%;
   width: 70%;
   padding-top: 70%;
   background: purple;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .down-clicker-mover {
@@ -73,5 +77,11 @@
   }
   100% {
     transform: translateY(10px);
+  }
+}
+
+@media (min-width: 960px) {
+  #intro {
+    padding: 0;
   }
 }
