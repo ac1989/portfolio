@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "parcel build index.html --public-url . -d ./docs",
+    "clean": "rm -rf .cache rm -rf dist"
+  },
   "devDependencies": {
     "node-sass": "^4.9.0"
   }
