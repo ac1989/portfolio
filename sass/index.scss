@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'variables/color';
+@import 'typography';
+@import 'projects';
+@import 'buttons';
+
+// General / Global
+
+body {
+  background: $off-white;
+}
+
+#container {
+  position: relative;
+}
+
+.view {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  #container {
+    margin: auto;
+    width: 86%;
+    max-width: 1440px;
+  }
+}

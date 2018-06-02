@@ -1,0 +1,79 @@
+#projects {
+  color: $off-white;
+}
+
+#project-calary-man {
+  background: #b71c1c;
+  .tech-button {
+    border-bottom: 8px solid #b71c1c;
+  }
+}
+
+#project-go {
+  background: #263238;
+  .tech-button {
+    border-bottom: 8px solid #263238;
+  }
+}
+
+#project-tascii {
+  background: hotpink;
+  .tech-button {
+    border-bottom: 8px solid hotpink;
+  }
+}
+
+#project-portfolio {
+  background: #0097a7;
+  .tech-button {
+    border-bottom: 8px solid #0097a7;
+  }
+}
+
+@media (min-width: 960px) {
+  #projects {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project-wrapper {
+    margin-bottom: 2%;
+  }
+  .project-wrapper.project-small {
+    position: relative;
+    width: 44%;
+    padding-top: 28%;
+  }
+  .project-wrapper.project-medium {
+    position: relative;
+    width: 54%;
+    padding-top: 28%;
+  }
+  .project-content-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+  }
+  .project-text {
+    position: relative;
+    height: 200%;
+    width: 100%;
+    transition: transform 0.4s cubic-bezier(0.58, 0.06, 0.25, 1);
+  }
+  .project-title,
+  .project-description {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-description {
+    text-decoration: underline;
+  }
+}

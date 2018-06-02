@@ -1,0 +1,28 @@
+.project-buttons {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  display: flex;
+  z-index: 100;
+}
+.tech-button {
+  width: 64px;
+  height: 64px;
+  margin-right: 8px;
+  background: $off-black;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 0.4s ease-in-out;
+  &:nth-child(2n) {
+    transition-delay: 0.05s;
+  }
+  &:nth-child(3n) {
+    transition-delay: 0.1s;
+  }
+  &:nth-child(4n) {
+    transition-delay: 0.15s;
+  }
+  &:nth-child(5n) {
+    transition-delay: 0.2s;
+  }
+}
