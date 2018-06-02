@@ -1,0 +1,50 @@
+#intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+#intro-left,
+#intro-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#intro-left {
+  padding: 4rem 0;
+  justify-content: space-around;
+}
+
+#intro-right {
+  align-items: flex-end;
+}
+
+#down-clicker {
+  position: relative;
+  width: 70%;
+  padding-top: 70%;
+  background: purple;
+  overflow: hidden;
+}
+
+.down-clicker-mover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotateZ(20deg);
+  animation: downShift 10s infinite linear;
+}
+
+@keyframes downShift {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}

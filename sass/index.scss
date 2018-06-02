@@ -1,6 +1,8 @@
 @import 'reset';
 @import 'variables/color';
 @import 'typography';
+@import 'header';
+@import 'intro';
 @import 'projects';
 @import 'buttons';
 @import 'about';
@@ -23,9 +25,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10vh;
+  margin-bottom: 48px;
   &:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
