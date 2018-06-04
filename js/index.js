@@ -55,7 +55,11 @@ window.onload = () => {
     ripple.style.paddingTop = '100%';
     ripple.style.top =
       techButton.getBoundingClientRect().height -
-      ripple.getBoundingClientRect().height;
+      techButton.getBoundingClientRect().width;
+    console.log(
+      techButton.getBoundingClientRect().height -
+        techButton.getBoundingClientRect().width
+    );
     ripple.style.borderRadius = '50%';
     ripple.style.animation = 'ripple 0.6s linear';
 
@@ -63,7 +67,7 @@ window.onload = () => {
       techButton.appendChild(ripple);
     });
     techButton.addEventListener('mouseleave', () => {
-      ripple.remove();
+      ripple.parentNode.removeChild(ripple);
     });
   });
 

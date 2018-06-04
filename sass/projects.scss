@@ -151,14 +151,16 @@
     flex-direction: row;
   }
   .project-wrapper {
-    margin-bottom: 3%;
+    margin-bottom: 16px;
   }
   .project-wrapper.project-small {
+    display: table;
     position: relative;
     width: 43%;
     padding-top: 34%;
   }
   .project-wrapper.project-medium {
+    display: table;
     position: relative;
     width: 56%;
     padding-top: 34%;
@@ -170,7 +172,7 @@
 
 @media (min-width: 1280px) {
   .project-wrapper {
-    margin-bottom: 3%;
+    margin-bottom: 24px;
   }
   .project-wrapper.project-small {
     position: relative;
