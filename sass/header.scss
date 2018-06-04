@@ -13,8 +13,9 @@
 
 nav {
   display: flex;
-  width: 82%;
+  width: 100%;
   max-width: 1280px;
+  margin-right: 1rem;
   align-self: center;
   justify-content: flex-end;
   z-index: 100;
@@ -31,5 +32,12 @@ nav {
       cursor: pointer;
       border-bottom: 4px solid $off-white;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  nav {
+    width: 82%;
+    margin-right: 0;
   }
 }

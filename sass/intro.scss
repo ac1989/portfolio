@@ -2,29 +2,26 @@
   position: relative;
   width: 100%;
   display: flex;
-  padding: 0 1rem;
+  padding: 0;
   & hr {
     margin: 1rem 0;
     background: purple;
   }
-}
-
-#intro-left,
-#intro-right {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  & a {
+    color: purple;
+  }
 }
 
 #intro-left {
-  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
   justify-content: space-around;
 }
 
 #intro-right {
-  align-items: flex-end;
-  justify-content: center;
+  width: 0;
+  display: none;
 }
 
 #down-clicker {
@@ -81,8 +78,32 @@
   }
 }
 
+@media (min-width: 600px) {
+  #intro-left {
+    padding: 4rem;
+  }
+}
+
 @media (min-width: 960px) {
   #intro {
     padding: 0;
+  }
+  #intro-left,
+  #intro-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  #intro-left {
+    text-align: left;
+    padding: 4rem 0;
+    justify-content: space-around;
+  }
+
+  #intro-right {
+    align-items: flex-end;
+    justify-content: center;
   }
 }

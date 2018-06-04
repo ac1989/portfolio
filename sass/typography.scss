@@ -24,28 +24,44 @@ h5 {
   font-weight: normal;
 }
 
-h1 {
-  font-size: 2.441rem;
-  line-height: 3.052rem;
-}
-h2 {
-  font-size: 1.953rem;
-  line-height: 2.441rem;
-}
-h3 {
-  font-size: 1.5em;
-  line-height: 2.5rem;
-}
-li,
-p {
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
 li {
   line-height: 1.5rem;
 }
 
+h1 {
+  font-size: 1.728rem;
+  line-height: 2.074rem;
+}
+h2 {
+  font-size: 1.44rem;
+  line-height: 1.728rem;
+}
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.44rem;
+}
+
+@media (min-width: 600px) {
+  // 1.25 Scale
+
+  h1 {
+    font-size: 2.441rem;
+    line-height: 3.052rem;
+  }
+  h2 {
+    font-size: 1.953rem;
+    line-height: 2.441rem;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+  }
+  li,
+  p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
 @media (min-width: 1440px) {
   // 1.5 Scale
   h1 {

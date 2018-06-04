@@ -1,9 +1,20 @@
 #footer {
   position: relative;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 200px;
   background: #0097a7;
   overflow-y: hidden;
+  & a {
+    color: $off-white;
+  }
+}
+
+#footer-rule {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  background: $off-white;
 }
 
 #footer-text {
@@ -20,23 +31,34 @@
 }
 
 #footer-links {
-  margin-bottom: 18%;
+  text-align: center;
+  margin: 1rem;
+  // margin-bottom: 25%;
 }
 
 #footer-copyright {
+  color: $off-white;
   position: relative;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 #footer-return {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: -90%;
-  width: 70%;
-  padding-top: 70%;
-  border-radius: 50%;
-  background: $off-white;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  #footer {
+    position: relative;
+    width: 100%;
+    padding-top: 40%;
+    background: #0097a7;
+    overflow-y: hidden;
+  }
+}
+@media (min-width: 960px) {
+  #about {
+    margin-bottom: 8rem;
+  }
 }
