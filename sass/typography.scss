@@ -40,6 +40,10 @@ h3 {
   font-size: 1.2rem;
   line-height: 1.44rem;
 }
+li,
+p {
+  margin: 0.2rem 0;
+}
 
 @media (min-width: 600px) {
   // 1.25 Scale

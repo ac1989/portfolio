@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'variables/color';
 @import 'typography';
+@import 'animation';
 @import 'header';
 @import 'intro';
 @import 'projects';
@@ -22,10 +23,6 @@ a {
 
 #container {
   position: relative;
-}
-
-.page-rule {
-  width: 80%;
 }
 
 .view {
