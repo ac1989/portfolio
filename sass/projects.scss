@@ -51,7 +51,8 @@
 }
 
 .project-wrapper.project-small,
-.project-wrapper.project-medium {
+.project-wrapper.project-medium,
+.project-wrapper.project-large {
   position: relative;
   width: 100%;
   padding-top: 160px;
@@ -94,11 +95,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .project-wrapper {
+    margin-bottom: 24px;
+  }
   .project-wrapper.project-small,
-  .project-wrapper.project-medium {
+  .project-wrapper.project-medium,
+  .project-wrapper.project-large {
     position: relative;
     width: 100%;
-    padding-top: 400px;
+    padding-top: 300px;
   }
   .project-content-wrapper {
     position: absolute;
@@ -131,7 +136,7 @@
 
 @media (min-width: 600px) {
   #projects-view {
-    padding-top: 1.5rem;
+    padding: 1.5rem 1rem 0 1rem;
     & h3 {
       display: block;
       text-align: center;
@@ -151,9 +156,6 @@
   #projects {
     flex-direction: row;
   }
-  .project-wrapper {
-    margin-bottom: 16px;
-  }
   .project-wrapper.project-small {
     display: table;
     position: relative;
@@ -166,14 +168,22 @@
     width: 56%;
     padding-top: 34%;
   }
+  .project-wrapper.project-large {
+    display: table;
+    position: relative;
+    width: 100%;
+    padding-top: 34%;
+  }
   .project-description {
     padding: 0;
   }
 }
 
 @media (min-width: 1280px) {
-  .project-wrapper {
-    margin-bottom: 24px;
+  .project-wrapper.project-large {
+    position: relative;
+    width: 100%;
+    padding-top: 28%;
   }
   .project-wrapper.project-small {
     position: relative;
