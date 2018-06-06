@@ -1,3 +1,4 @@
+import throttle from 'lodash/throttle';
 import '../sass/index.scss';
 import './polyfills';
 
@@ -8,6 +9,7 @@ window.onload = () => {
   const projects = document.getElementsByClassName('project-wrapper');
   const buttonWrappers = document.getElementsByClassName('project-buttons');
   const techButtons = document.getElementsByClassName('tech-button');
+  let projectHeight = projects[0].getBoundingClientRect().height;
 
   // Variables
   const colors = {
@@ -19,8 +21,8 @@ window.onload = () => {
     mui: '#2196f3',
     javascript: '#1a1a1a'
   };
-  let projectHeight = projects[0].getBoundingClientRect().height;
 
+  // Project Hover Animations
   [...projects].forEach(project => {
     const projectText = project.querySelector('.project-text');
     const techButtons = project.getElementsByClassName('tech-button');
@@ -44,6 +46,7 @@ window.onload = () => {
     });
   });
 
+  // Tech Button Ripple Animations
   [...techButtons].forEach(techButton => {
     let tech = techButton.classList[1].substring(7);
     let ripple = document.createElement('div');
@@ -56,10 +59,6 @@ window.onload = () => {
     ripple.style.top =
       techButton.getBoundingClientRect().height -
       techButton.getBoundingClientRect().width;
-    console.log(
-      techButton.getBoundingClientRect().height -
-        techButton.getBoundingClientRect().width
-    );
     ripple.style.borderRadius = '50%';
     ripple.style.animation = 'ripple 0.6s linear';
 
@@ -71,7 +70,7 @@ window.onload = () => {
     });
   });
 
-  window.onresize = () => {
+  window.onresize = throttle(() => {
     projectHeight = projects[0].getBoundingClientRect().height;
-  };
+  }, 400);
 };
