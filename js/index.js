@@ -3,8 +3,6 @@ import '../sass/index.scss';
 import './polyfills';
 
 window.onload = () => {
-  console.log('hello world');
-
   // Cache DOM
   const projects = document.getElementsByClassName('project-wrapper');
   const buttonWrappers = document.getElementsByClassName('project-buttons');
@@ -28,8 +26,6 @@ window.onload = () => {
     const techButtons = project.getElementsByClassName('tech-button');
 
     project.addEventListener('mouseenter', e => {
-      e.stopPropagation();
-      e.stopImmediatePropagation();
       projectText.style.transform = `translateY(-${projectHeight}px)`;
       [...techButtons].forEach(techButton => {
         techButton.style.transform = 'translateY(0px)';
@@ -37,7 +33,6 @@ window.onload = () => {
       });
     });
     project.addEventListener('mouseleave', e => {
-      e.stopPropagation();
       projectText.style.transform = `translateY(0px)`;
       [...techButtons].forEach(techButton => {
         techButton.style.transform = 'translateY(16px)';
@@ -49,6 +44,7 @@ window.onload = () => {
   // Tech Button Ripple Animations
   [...techButtons].forEach(techButton => {
     let tech = techButton.classList[1].substring(7);
+
     let ripple = document.createElement('div');
     ripple.style.opacity = 0;
     ripple.style.background = colors[tech] || '#f2f2f2';
